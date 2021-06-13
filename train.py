@@ -117,6 +117,7 @@ def train_top_model():
     model.compile(optimizer='rmsprop',
                   loss='binary_crossentropy', metrics=['accuracy'])
 
+    import pdb; pdb.set_trace()
     model.fit(train_data, train_labels,
               epochs=epochs,
               batch_size=batch_size,
