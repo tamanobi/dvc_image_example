@@ -51,10 +51,6 @@ import tensorflow_addons as tfa
 from tqdm.keras import TqdmCallback
 tqdm_callback = tfa.callbacks.TQDMProgressBar()
 
-from PIL import ImageFile
-ImageFile.LOAD_TRUNCATED_IMAGES = True
-
-
 pathname = os.path.dirname(sys.argv[0])
 path = os.path.abspath(pathname)
 
@@ -96,7 +92,7 @@ def save_bottlebeck_features():
         batch_size=batch_size,
         class_mode=None,
         shuffle=False)
-    bottleneck_features_validation = model.predict_generator(
+    bottleneck_features_validation = model.predict(
         generator, nb_validation_samples // batch_size)
     np.save(open('bottleneck_features_validation.npy', 'wb'),
             bottleneck_features_validation)
