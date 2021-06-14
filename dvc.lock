@@ -8,13 +8,13 @@ stages:
       size: 64128504
       nfiles: 2800
     - path: train.py
-      md5: be147e8c0eddc4edd423769ad45665b4
-      size: 4461
+      md5: 5edbd6fadb9d2e9c01eb3593b76d48a6
+      size: 4462
     outs:
     - path: model.h5
-      md5: d910c2eba9023403a808547df8fc8370
+      md5: ff13018bdcf4cdf78b0d703bff7ed728
       size: 8405536
     - path: training_metrics
-      md5: 840487f165eac3f3f1a5df9e73c5a214.dir
-      size: 1520
+      md5: 6ecbe1baf2e803f6bdff3e7e6e6b430f.dir
+      size: 14912
       nfiles: 4
