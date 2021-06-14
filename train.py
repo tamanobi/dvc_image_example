@@ -41,12 +41,13 @@ data/
 import numpy as np
 import sys
 import os
+import dvclive
 
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dropout, Flatten, Dense
 from tensorflow.keras import applications
-from tensorflow.keras.callbacks import CSVLogger
+from tensorflow.keras.callbacks import CSVLogger, Callback
 import tensorflow_addons as tfa
 from tqdm.keras import TqdmCallback
 tqdm_callback = tfa.callbacks.TQDMProgressBar()
@@ -97,6 +98,12 @@ def save_bottlebeck_features():
     np.save(open('bottleneck_features_validation.npy', 'wb'),
             bottleneck_features_validation)
 
+class MetricsCallback(Callback):
+    def on_epoch_end(self, epoch: int, logs: dict = None):
+        logs = logs or {}
+        for metric, value in logs.items():
+            dvclive.log(metric, value)
+        dvclive.next_step()
 
 def train_top_model():
     train_data = np.load(open('bottleneck_features_train.npy', 'rb'))
@@ -122,7 +129,7 @@ def train_top_model():
               batch_size=batch_size,
               validation_data=(validation_data, validation_labels),
               verbose=0,
-              callbacks=[tqdm_callback, CSVLogger("metrics.csv")])
+              callbacks=[tqdm_callback, CSVLogger("metrics.csv"), MetricsCallback()])
     model.save_weights(top_model_weights_path)
 
 

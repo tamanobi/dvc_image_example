@@ -8,18 +8,13 @@ stages:
       size: 64128504
       nfiles: 2800
     - path: train.py
-      md5: e95c8533f47c5f7321399a91bad557de
-      size: 4189
+      md5: be147e8c0eddc4edd423769ad45665b4
+      size: 4461
     outs:
-    - path: bottleneck_features_train.npy
-      md5: c5adf85633431ec10749c621c21c7b03
-      size: 65536128
-    - path: bottleneck_features_validation.npy
-      md5: afab385bdf3d9ac76a00d0a0e422f098
-      size: 26214528
-    - path: metrics.csv
-      md5: fba9da4c9f588bdeba99747cca938184
-      size: 841
     - path: model.h5
-      md5: aa3b068d806d07ed285a27a42b5f2eff
+      md5: d910c2eba9023403a808547df8fc8370
       size: 8405536
+    - path: training_metrics
+      md5: 840487f165eac3f3f1a5df9e73c5a214.dir
+      size: 1520
+      nfiles: 4
