@@ -1,4 +1,4 @@
 train:
   seed: 123456789
-  epochs: 12
+  epochs: 100
   batch_size: 20
