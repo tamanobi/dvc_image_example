@@ -12,7 +12,7 @@
 <tr><th style="text-align: right;">  accuracy</th><th style="text-align: right;">    loss</th><th style="text-align: right;">  step</th><th style="text-align: right;">  val_accuracy</th><th style="text-align: right;">  val_loss</th></tr>
 </thead>
 <tbody>
-<tr><td style="text-align: right;">     0.952</td><td style="text-align: right;">0.126612</td><td style="text-align: right;">     9</td><td style="text-align: right;">        0.8575</td><td style="text-align: right;">  0.716468</td></tr>
+<tr><td style="text-align: right;">    0.9525</td><td style="text-align: right;">0.111851</td><td style="text-align: right;">     9</td><td style="text-align: right;">       0.90375</td><td style="text-align: right;">  0.376123</td></tr>
 </tbody>
 </table>
 <br>
@@ -23,161 +23,64 @@
     "data": {
         "values": [
     {
-        "accuracy": "0.7739999890327454",
         "rev": "workspace",
         "step": "0",
-        "timestamp": "1623771355837"
+        "timestamp": "1623771560337",
+        "val_accuracy": "0.6875"
     },
     {
-        "accuracy": "0.8579999804496765",
         "rev": "workspace",
         "step": "1",
-        "timestamp": "1623771356610"
+        "timestamp": "1623771560736",
+        "val_accuracy": "0.8224999904632568"
     },
     {
-        "accuracy": "0.8805000185966492",
         "rev": "workspace",
         "step": "2",
-        "timestamp": "1623771357374"
+        "timestamp": "1623771561134",
+        "val_accuracy": "0.9087499976158142"
     },
     {
-        "accuracy": "0.9039999842643738",
         "rev": "workspace",
         "step": "3",
-        "timestamp": "1623771358135"
+        "timestamp": "1623771561537",
+        "val_accuracy": "0.8999999761581421"
     },
     {
-        "accuracy": "0.906000018119812",
         "rev": "workspace",
         "step": "4",
-        "timestamp": "1623771358898"
+        "timestamp": "1623771561933",
+        "val_accuracy": "0.90625"
     },
     {
-        "accuracy": "0.9279999732971191",
         "rev": "workspace",
         "step": "5",
-        "timestamp": "1623771359701"
+        "timestamp": "1623771562342",
+        "val_accuracy": "0.8575000166893005"
     },
     {
-        "accuracy": "0.9304999709129333",
         "rev": "workspace",
         "step": "6",
-        "timestamp": "1623771360498"
+        "timestamp": "1623771562741",
+        "val_accuracy": "0.9024999737739563"
     },
     {
-        "accuracy": "0.9375",
         "rev": "workspace",
         "step": "7",
-        "timestamp": "1623771361277"
+        "timestamp": "1623771563146",
+        "val_accuracy": "0.9087499976158142"
     },
     {
-        "accuracy": "0.9484999775886536",
         "rev": "workspace",
         "step": "8",
-        "timestamp": "1623771362060"
-    },
-    {
-        "accuracy": "0.9520000219345093",
-        "rev": "workspace",
-        "step": "9",
-        "timestamp": "1623771362840"
-    }
-]
-    },
-    "title": "",
-    "width": 300,
-    "height": 300,
-    "mark": {
-        "type": "line"
-    },
-    "encoding": {
-        "x": {
-            "field": "step",
-            "type": "quantitative",
-            "title": "step"
-        },
-        "y": {
-            "field": "accuracy",
-            "type": "quantitative",
-            "title": "accuracy",
-            "scale": {
-                "zero": false
-            }
-        },
-        "color": {
-            "field": "rev",
-            "type": "nominal"
-        }
-    }
-}
-;
-    vegaEmbed('#plot0', spec);
-</script>
-<div id = "plot1"></div>
-<script type = "text/javascript">
-    var spec = {
-    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-    "data": {
-        "values": [
-    {
-        "rev": "workspace",
-        "step": "0",
-        "timestamp": "1623771355837",
-        "val_accuracy": "0.8412500023841858"
-    },
-    {
-        "rev": "workspace",
-        "step": "1",
-        "timestamp": "1623771356610",
-        "val_accuracy": "0.8962500095367432"
-    },
-    {
-        "rev": "workspace",
-        "step": "2",
-        "timestamp": "1623771357374",
-        "val_accuracy": "0.8137500286102295"
-    },
-    {
-        "rev": "workspace",
-        "step": "3",
-        "timestamp": "1623771358135",
-        "val_accuracy": "0.8987500071525574"
-    },
-    {
-        "rev": "workspace",
-        "step": "4",
-        "timestamp": "1623771358899",
-        "val_accuracy": "0.893750011920929"
-    },
-    {
-        "rev": "workspace",
-        "step": "5",
-        "timestamp": "1623771359701",
-        "val_accuracy": "0.8862500190734863"
-    },
-    {
-        "rev": "workspace",
-        "step": "6",
-        "timestamp": "1623771360498",
-        "val_accuracy": "0.9012500047683716"
-    },
-    {
-        "rev": "workspace",
-        "step": "7",
-        "timestamp": "1623771361277",
+        "timestamp": "1623771563559",
         "val_accuracy": "0.8762500286102295"
     },
     {
         "rev": "workspace",
-        "step": "8",
-        "timestamp": "1623771362060",
-        "val_accuracy": "0.8924999833106995"
-    },
-    {
-        "rev": "workspace",
         "step": "9",
-        "timestamp": "1623771362840",
-        "val_accuracy": "0.8575000166893005"
+        "timestamp": "1623771563970",
+        "val_accuracy": "0.9037500023841858"
     }
 ]
     },
@@ -208,6 +111,103 @@
     }
 }
 ;
+    vegaEmbed('#plot0', spec);
+</script>
+<div id = "plot1"></div>
+<script type = "text/javascript">
+    var spec = {
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "data": {
+        "values": [
+    {
+        "loss": "0.68803870677948",
+        "rev": "workspace",
+        "step": "0",
+        "timestamp": "1623771560336"
+    },
+    {
+        "loss": "0.35814255475997925",
+        "rev": "workspace",
+        "step": "1",
+        "timestamp": "1623771560735"
+    },
+    {
+        "loss": "0.29071417450904846",
+        "rev": "workspace",
+        "step": "2",
+        "timestamp": "1623771561134"
+    },
+    {
+        "loss": "0.22850936651229858",
+        "rev": "workspace",
+        "step": "3",
+        "timestamp": "1623771561537"
+    },
+    {
+        "loss": "0.19766122102737427",
+        "rev": "workspace",
+        "step": "4",
+        "timestamp": "1623771561933"
+    },
+    {
+        "loss": "0.18777646124362946",
+        "rev": "workspace",
+        "step": "5",
+        "timestamp": "1623771562341"
+    },
+    {
+        "loss": "0.1756281554698944",
+        "rev": "workspace",
+        "step": "6",
+        "timestamp": "1623771562741"
+    },
+    {
+        "loss": "0.13665074110031128",
+        "rev": "workspace",
+        "step": "7",
+        "timestamp": "1623771563146"
+    },
+    {
+        "loss": "0.11739043146371841",
+        "rev": "workspace",
+        "step": "8",
+        "timestamp": "1623771563559"
+    },
+    {
+        "loss": "0.11185138672590256",
+        "rev": "workspace",
+        "step": "9",
+        "timestamp": "1623771563969"
+    }
+]
+    },
+    "title": "",
+    "width": 300,
+    "height": 300,
+    "mark": {
+        "type": "line"
+    },
+    "encoding": {
+        "x": {
+            "field": "step",
+            "type": "quantitative",
+            "title": "step"
+        },
+        "y": {
+            "field": "loss",
+            "type": "quantitative",
+            "title": "loss",
+            "scale": {
+                "zero": false
+            }
+        },
+        "color": {
+            "field": "rev",
+            "type": "nominal"
+        }
+    }
+}
+;
     vegaEmbed('#plot1', spec);
 </script>
 <div id = "plot2"></div>
@@ -219,62 +219,62 @@
     {
         "rev": "workspace",
         "step": "0",
-        "timestamp": "1623771355837",
-        "val_loss": "0.3743656873703003"
+        "timestamp": "1623771560336",
+        "val_loss": "0.7417951822280884"
     },
     {
         "rev": "workspace",
         "step": "1",
-        "timestamp": "1623771356610",
-        "val_loss": "0.24919456243515015"
+        "timestamp": "1623771560736",
+        "val_loss": "0.38901078701019287"
     },
     {
         "rev": "workspace",
         "step": "2",
-        "timestamp": "1623771357374",
-        "val_loss": "0.48091357946395874"
+        "timestamp": "1623771561134",
+        "val_loss": "0.24958732724189758"
     },
     {
         "rev": "workspace",
         "step": "3",
-        "timestamp": "1623771358135",
-        "val_loss": "0.3016076385974884"
+        "timestamp": "1623771561537",
+        "val_loss": "0.2491830438375473"
     },
     {
         "rev": "workspace",
         "step": "4",
-        "timestamp": "1623771358899",
-        "val_loss": "0.3281008005142212"
+        "timestamp": "1623771561933",
+        "val_loss": "0.27479287981987"
     },
     {
         "rev": "workspace",
         "step": "5",
-        "timestamp": "1623771359701",
-        "val_loss": "0.3134733736515045"
+        "timestamp": "1623771562342",
+        "val_loss": "0.3899626135826111"
     },
     {
         "rev": "workspace",
         "step": "6",
-        "timestamp": "1623771360498",
-        "val_loss": "0.34020763635635376"
+        "timestamp": "1623771562741",
+        "val_loss": "0.28792232275009155"
     },
     {
         "rev": "workspace",
         "step": "7",
-        "timestamp": "1623771361277",
-        "val_loss": "0.49438798427581787"
+        "timestamp": "1623771563146",
+        "val_loss": "0.27417853474617004"
     },
     {
         "rev": "workspace",
         "step": "8",
-        "timestamp": "1623771362060",
-        "val_loss": "0.42636117339134216"
+        "timestamp": "1623771563559",
+        "val_loss": "0.4200311005115509"
     },
     {
         "rev": "workspace",
         "step": "9",
-        "timestamp": "1623771362840",
-        "val_loss": "0.7164682149887085"
+        "timestamp": "1623771563969",
+        "val_loss": "0.3761231303215027"
     }
 ]
     },
@@ -314,64 +314,64 @@
     "data": {
         "values": [
     {
-        "loss": "0.6027998328208923",
+        "accuracy": "0.7549999952316284",
         "rev": "workspace",
         "step": "0",
-        "timestamp": "1623771355837"
+        "timestamp": "1623771560336"
     },
     {
-        "loss": "0.35289841890335083",
+        "accuracy": "0.8519999980926514",
         "rev": "workspace",
         "step": "1",
-        "timestamp": "1623771356610"
+        "timestamp": "1623771560735"
     },
     {
-        "loss": "0.29625988006591797",
+        "accuracy": "0.8830000162124634",
         "rev": "workspace",
         "step": "2",
-        "timestamp": "1623771357374"
+        "timestamp": "1623771561134"
     },
     {
-        "loss": "0.24723200500011444",
+        "accuracy": "0.9100000262260437",
         "rev": "workspace",
         "step": "3",
-        "timestamp": "1623771358135"
+        "timestamp": "1623771561537"
     },
     {
-        "loss": "0.2432134449481964",
+        "accuracy": "0.9204999804496765",
         "rev": "workspace",
         "step": "4",
-        "timestamp": "1623771358898"
+        "timestamp": "1623771561933"
     },
     {
-        "loss": "0.2100636512041092",
+        "accuracy": "0.9279999732971191",
         "rev": "workspace",
         "step": "5",
-        "timestamp": "1623771359700"
+        "timestamp": "1623771562342"
     },
     {
-        "loss": "0.17795294523239136",
+        "accuracy": "0.9330000281333923",
         "rev": "workspace",
         "step": "6",
-        "timestamp": "1623771360498"
+        "timestamp": "1623771562741"
     },
     {
-        "loss": "0.17579427361488342",
+        "accuracy": "0.9484999775886536",
         "rev": "workspace",
         "step": "7",
-        "timestamp": "1623771361277"
+        "timestamp": "1623771563146"
     },
     {
-        "loss": "0.14251340925693512",
+        "accuracy": "0.9520000219345093",
         "rev": "workspace",
         "step": "8",
-        "timestamp": "1623771362060"
+        "timestamp": "1623771563559"
     },
     {
-        "loss": "0.12661226093769073",
+        "accuracy": "0.9524999856948853",
         "rev": "workspace",
         "step": "9",
-        "timestamp": "1623771362840"
+        "timestamp": "1623771563969"
     }
 ]
     },
@@ -388,9 +388,9 @@
             "title": "step"
         },
         "y": {
-            "field": "loss",
+            "field": "accuracy",
             "type": "quantitative",
-            "title": "loss",
+            "title": "accuracy",
             "scale": {
                 "zero": false
             }

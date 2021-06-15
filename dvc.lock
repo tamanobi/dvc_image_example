@@ -12,13 +12,13 @@ stages:
       size: 4597
     params:
       params.yaml:
-        train.batch_size: 10
+        train.batch_size: 20
         train.epochs: 10
     outs:
     - path: model.h5
-      md5: c595c7f67d8f2dd739307b82f28022ca
+      md5: 45daa40018f92255853e59a709a31557
       size: 8405536
     - path: training_metrics
-      md5: e54eec1348f4dfff0319282e732a50c9.dir
-      size: 1538
+      md5: 13c5d8de975ec5b87e47f8aff892a6f3.dir
+      size: 1525
       nfiles: 4
