@@ -10,3 +10,6 @@ stages:
       training_metrics:
         summary: true
         html: true
+    params:
+      - train.epochs
+      - train.batch_size
