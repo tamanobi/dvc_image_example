@@ -11,5 +11,6 @@ stages:
         summary: true
         html: true
     params:
+      - train.seed
       - train.epochs
       - train.batch_size

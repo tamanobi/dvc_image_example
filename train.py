@@ -50,6 +50,17 @@ from tensorflow.keras import applications
 from tensorflow.keras.callbacks import CSVLogger, Callback
 import tensorflow_addons as tfa
 from tqdm.keras import TqdmCallback
+from seed import set_seed
+import yaml
+
+with open("params.yaml", "r") as fd:
+    params = yaml.safe_load(fd)
+
+epochs = params["train"]["epochs"]
+batch_size = params["train"]["batch_size"]
+set_seed(params["train"]["seed"])
+
+
 tqdm_callback = tfa.callbacks.TQDMProgressBar()
 
 pathname = os.path.dirname(sys.argv[0])
@@ -66,13 +77,6 @@ nb_train_samples = 2 * len([name for name in os.listdir(cats_train_path)
                             if os.path.isfile(
                                 os.path.join(cats_train_path, name))])
 nb_validation_samples = 800
-
-import yaml
-with open("params.yaml", "r") as fd:
-    params = yaml.safe_load(fd)
-
-epochs = params["train"]["epochs"]
-batch_size = params["train"]["batch_size"]
 
 
 
