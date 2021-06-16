@@ -49,7 +49,6 @@ from tensorflow.keras.layers import Dropout, Flatten, Dense
 from tensorflow.keras import applications
 from tensorflow.keras.callbacks import CSVLogger, Callback
 import tensorflow_addons as tfa
-from tqdm.keras import TqdmCallback
 from seed import set_seed
 import yaml
 
