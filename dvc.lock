@@ -8,8 +8,8 @@ stages:
       size: 64128504
       nfiles: 2800
     - path: train.py
-      md5: e3521f1f03a59b5c05a5f68f90708880
-      size: 4659
+      md5: 547b5bf0231174b7a18a1cbaf88705df
+      size: 4623
     params:
       params.yaml:
         train.batch_size: 20
@@ -17,9 +17,9 @@ stages:
         train.seed: 123456789
     outs:
     - path: model.h5
-      md5: 728716b0e8db180803e9b5d4605e8cca
+      md5: 6a2ff66305203156cadd7d911fa35792
       size: 8405536
     - path: training_metrics
-      md5: f4069418cac7d10507465f9a2fa0c2e4.dir
-      size: 14959
+      md5: f21554291f72c8b37c5582dd3117836b.dir
+      size: 14964
       nfiles: 4
